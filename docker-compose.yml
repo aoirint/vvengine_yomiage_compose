@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+    voicevox_engine:
+        image: voicevox/voicevox_engine:cpu-ubuntu20.04-0.12.4
+        restart: always
+        ports:
+            - '${HOST_PORT}:50021'
+
